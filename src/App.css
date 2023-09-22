@@ -1,0 +1,75 @@
+/* src/App.css */
+
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.achievement {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.achievement.achieved {
+  background-color: #c3f1c3; /* Green background for achieved achievements */
+}
+
+.achievement .achievement-details {
+  flex-grow: 1;
+}
+
+.achievement h2 {
+  margin: 0;
+}
+
+.achievement p {
+  margin: 0;
+  color: #555;
+}
+
+.achievement .achievement-actions {
+  margin-left: 10px;
+  display: flex;
+  gap: 5px;
+}
+
+button {
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+button.edit-button {
+  background-color: #007bff; /* Blue for Edit button */
+  color: #fff;
+}
+
+button.delete-button {
+  background-color: #dc3545; /* Red for Delete button */
+  color: #fff;
+}
+
+button.achieved-button {
+  background-color: #28a745; /* Green for Mark Achieved button */
+  color: #fff;
+}
+
+button.unachieved-button {
+  background-color: #ffc107; /* Yellow for Mark Unachieved button */
+  color: #000;
+}
+
+button:focus {
+  outline: none;
+}
