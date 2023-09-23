@@ -1,5 +1,5 @@
 // src/components/AddAchievement.js
-
+import './styles.css'; // Import your CSS file
 import React, { useState } from 'react';
 
 function AddAchievement({ onAdd }) {
@@ -21,9 +21,15 @@ function AddAchievement({ onAdd }) {
 
   return (
     <div>
-      <h2>Add New Achievement</h2>
+      <div className="title-bar">
+        {' '}
+        {/* Apply the 'title-bar' class */}
+        <h2>Add New Achievement</h2>
+      </div>
       <form onSubmit={handleSubmit}>
-        <div>
+        <div className="description-bar">
+          {' '}
+          {/* Apply the 'description-bar' class */}
           <label>Title:</label>
           <input
             type="text"
@@ -32,7 +38,9 @@ function AddAchievement({ onAdd }) {
             onChange={handleInputChange}
           />
         </div>
-        <div>
+        <div className="description-bar">
+          {' '}
+          {/* Apply the 'description-bar' class */}
           <label>Description:</label>
           <input
             type="text"
