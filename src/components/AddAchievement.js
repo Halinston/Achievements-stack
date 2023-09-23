@@ -1,5 +1,5 @@
 // src/components/AddAchievement.js
-import './styles.css'; // Import your CSS file
+import '../styles.css'; // Import your CSS file
 import React, { useState } from 'react';
 
 function AddAchievement({ onAdd }) {
